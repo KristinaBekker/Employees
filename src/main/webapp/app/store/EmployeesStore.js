@@ -4,15 +4,13 @@ Ext.define('Employees.store.EmployeesStore', {
 		'Employees.model.EmployeesModel'
 	],
 	model: 'Employees.model.EmployeesModel',
+
 	autoLoad: true,
 	autoSync: true,
 	proxy: {
 		type: 'rest',
 		api: {
-			create: 'employee',
-			read: 'employee',
-			destroy: 'employee',
-			update: 'employee'
+			read: 'employees',
 		},
 		reader: {
 			type: 'json',

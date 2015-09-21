@@ -4,10 +4,7 @@ Ext.define('Employees.model.EmployeesModel', {
 	proxy: {
 		type: 'rest',
 		api: {
-			create: 'employee',
-			read: 'employee',
-			destroy: 'employee',
-			update: 'employee'
+			read: 'employees',
 		},
 		reader: {
 			type: 'json',
